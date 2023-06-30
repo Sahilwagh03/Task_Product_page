@@ -1,0 +1,45 @@
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(3,278px);
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: end;
+}
+
+.shoe-container{
+    text-align: center;
+    display: grid;
+    border-radius: 16px;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    .main-container{
+        grid-template-columns: repeat(1,300px);
+        justify-content: center;
+        }
+}
+
+/* For small devices */
+@media screen and (max-width: 375px) {
+    .main-container{
+    grid-template-columns: repeat(1,300px);
+    justify-content: center;
+    }
+}
+
+
