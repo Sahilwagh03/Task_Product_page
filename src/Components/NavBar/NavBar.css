@@ -4,7 +4,7 @@
     font-family: poppins, sans-serif;
 }
 
-body{
+body {
     background-image: linear-gradient(to bottom right, #21E8C4 10%, #179B93 20%, #267B87 40%, #0F474F);
     background-repeat: no-repeat;
     height: auto;
@@ -18,13 +18,13 @@ body{
     z-index: 4;
 }
 
-.logo{
+.logo {
     width: 50px;
 }
 
-.search{
+.search {
     border-radius: 30px;
-    background:#409aae;
+    background: #409aae;
     padding: 5px;
 }
 
@@ -35,7 +35,40 @@ body{
     align-items: center;
     justify-content: space-between;
     margin: 10px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    /* Add bottom shadow */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    /* Add transition effects */
+    background-color: transparent;
+    /* Set initial background color */
+    color: white;
+    /* Set initial text color */
+}
 
+.navbar.scrolled {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    /* Update shadow for scrolled state */
+    backdrop-filter: blur(16px);
+    /* Add blur effect */
+    background-color: white;
+    /* Update background color for scrolled state */
+    color: black;
+    /* Update text color for scrolled state */
+}
+
+.Nav_div.scrolled {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
 }
 
 
@@ -113,7 +146,7 @@ body{
         justify-content: flex-end;
     }
 
-    .navbar{
+    .navbar {
         margin: 0px 15px;
     }
 
@@ -132,12 +165,13 @@ body{
 
     @keyframes fadeIn {
         from {
-          opacity: 0;
+            opacity: 0;
         }
+
         to {
-          opacity: 1;
+            opacity: 1;
         }
-      }
+    }
 
     .nav_lists_mobile {
         display: flex;
@@ -149,7 +183,7 @@ body{
         align-items: center;
     }
 
-    .nav_lists_mobile a{
+    .nav_lists_mobile a {
         text-decoration: none;
         color: black;
     }
@@ -173,19 +207,10 @@ body{
     .nav_menu {
         display: none;
     }
-    .search{
+
+    .search {
         border-radius: 30px;
-        background:#ffd664;
+        background: #ffd664;
         padding: 5px;
     }
-}
-
-/* For medium devices */
-@media screen and (max-width: 576px) {
-
-}
-
-/* For small devices */
-@media screen and (max-width: 375px) {
-    
 }
