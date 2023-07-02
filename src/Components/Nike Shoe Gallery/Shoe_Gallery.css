@@ -1,4 +1,6 @@
-
+.Gallery_section{
+    margin: 60px 0px;
+}
 
 .main-container{
     display: grid;
@@ -6,7 +8,10 @@
     text-align: center;
     justify-items: center;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
+    background: ghostwhite;
+    margin: 30px 204px;
+    border-radius: 30px;
 }
 
 .shoe-container{
@@ -15,6 +20,12 @@
     border-radius: 16px;
     font-size: 20px;
     padding: 20px;
+    color: black;
+}
+
+.Shoe_heading{
+    padding-left: 83px;
+    padding-top: 20px;
     color: white;
 }
 
@@ -31,7 +42,9 @@
     .main-container{
         grid-template-columns: repeat(1,300px);
         justify-content: center;
+        margin: 20px;
         }
+    
 }
 
 /* For small devices */

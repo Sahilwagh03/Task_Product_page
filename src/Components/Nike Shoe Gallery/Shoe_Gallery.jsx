@@ -8,10 +8,11 @@ const Shoe_Gallery = () => {
     return (
         <>
             <section className='Gallery_section'>
+            <h1 className='Shoe_heading'>Popular Shoes</h1>
                 <motion.div className="main-container"
                 initial={{opacity:0}}
                 animate={{opacity:1}}
-                transition={{duration:0.5 , delay:1.2}}>
+                transition={{duration:0.5 }}>
                     <div className="shoe-container">
                         <img src={Nike_1} alt="Nike Shoe 1" />
                         <span className="shoe-name">rafa-hard-court</span>
